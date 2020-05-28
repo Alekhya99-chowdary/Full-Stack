@@ -1,0 +1,12 @@
+.a1{
+    color:rebeccapurple;
+    text-align: center;
+    text-transform:capitalize;
+    font-style:oblique
+}
+.a2{
+    color:palegreen;
+    text-align:left;
+    text-transform:lowercase;
+    font-style:italic;
+}
