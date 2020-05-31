@@ -1,0 +1,20 @@
+ul{
+    list-style-type:none;
+    border: 2px solid black;
+    height:300px;
+    width: 200px;
+    padding-top:20px;
+    padding-left: 20px;
+}
+ul a{
+    color:blue;
+    text-decoration: none;
+    font-size: 20px;
+}
+ul a:hover{
+            color:chocolate;
+            font-size:large;
+}
+ul a:active{
+    color:red;
+}
