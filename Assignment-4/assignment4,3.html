@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkEmail(){
+                var v1;
+                v1=document.getElementById("txt1").value;
+                if(/^[A-Za-z0-9._-]{5,20}[@][A-Za-z]{2,10}[.][a-z]{2,6}$/.test(v1))
+                {
+                    window.alert('valid');
+                }
+                else{
+                    window.alert('invalid');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Email: <input type="text"id="txt1"/>
+        <button type="button"onclick="checkEmail()">Check</button>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkPhnum(){
+                var Mobilenum=document.getElementById("mobnum").value;
+                if(/^[6-9][0-9]{9}$/.test(Mobilenum))
+                {
+                    window.alert('valid');
+                }
+                else
+                {
+                    window.alert('invalid');
+                    document.getElementById("Mobilenum").focus();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Mobile Number: <input type="tel"id="mobnum"/><br/>
+        <button type="button"onclick="checkPhnum()">Check</button>
+        </body>
+</html>

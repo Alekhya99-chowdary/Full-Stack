@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkUP(){
+                var Username,Passwod;
+                Username=document.getElementById("txtU").value;
+                if(/^[A-Z][a-z]{4,8}$/.test(Username))
+                {
+                    window.alert('valid');
+                }
+                else{
+                    window.alert('invalid');
+                }
+                Password=document.getElementById("txtP").value;
+                if(/^[A-z][./!@#$%^&*()a-z0-9]*$/.test(v2))
+                {
+                    window.alert('valid');
+                }
+                else{
+                    window.alert('invalid');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Username:<input type="text"id="txtU"/><br/>
+        Fullname:<input type="text"id="txtF"/><br/>
+        Department:<input type="text"id="txtD"/><br/>
+        Address:<textarea row="10"cols="20"></textarea><br/>
+        Password:<input type="password"id="txtP"/><br/>
+        <button type="button"onclick="checkUP()">Check username and password</button>
+    </body>
+</html>
