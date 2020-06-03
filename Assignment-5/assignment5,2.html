@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkP(){
+                var v=document.getElementById("txtP").value;
+                if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,12}$/.test(v)){
+                  document.getElementById('lblError').innerHTML='valid Password';
+                }
+                else{
+                    window.alert('invalid');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Password: <input type="password"id="txtP"><br/>
+        <span id="lblError"></span>
+        <button type="button"onclick="checkP()">check</button>
+    </body>
+</html>
