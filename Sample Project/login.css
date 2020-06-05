@@ -1,0 +1,29 @@
+.table{
+    width:100%;
+}
+input[type=text],input[type=password]{
+    width:75%;
+    margin:8px;
+    padding:10p;
+    background-color:darkgrey;
+    color:black;
+}
+label{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-variant:small-caps;
+    color:darkblue;
+    text-align: center;
+}
+th p{
+    font-size:x-large;
+    font-family:monospace;
+    font-variant:small-caps;
+    text-align:center;
+}
+input[type=button]{
+    font-size:large;
+    font-weight:bolder;
+    background-color:maroon;
+    width: 100%;
+    color:white;
+}

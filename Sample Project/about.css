@@ -1,0 +1,34 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: xx-large;
+    background-color: maroon;
+  }
+  .top-left{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: xx-large;
+    background-color: maroon;
+  }
+  .caption1{
+  display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width:440px;
+    height:40px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    font-size: 20px;
+  }
+  .para{
+    margin:100px;
+    text-align:left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+  }
