@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+        <script src="bootstrap-4.5.0-dist/js/jquery.min.js" type="text/javascript"></script>
+        <link rel="StyleSheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/> 
+    </head>
+    <body>
+        <div class="container-fluid">
+            <form action="/action_page.php" method="post">
+                <h1>Login</h1>
+                <div class="col input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user-circle">Username</i></span>
+                    </div>
+                    <input type="text" class="form-control" id="txtUsername" placeholder="Enter Username"/>
+                </div>
+                <div class="col input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-key">Password</i></span>
+                    </div>
+                    <input type="password" class="form-control" id="txtpassword" placeholder="Enter Password"/>
+                </div>
+                <button type="button" class="btn btn-success lg center login_btn">Login</button>
+                <button type="button" class="btn btn-danger">Cancel</button><br/>
+                <label><input type="checkbox" name="remember">Remember me</label><br/>
+                <span class="psw">Forgot <a href="#">password?</a></span>           
+            </form>
+        </div>
+    </body>
+</html>
