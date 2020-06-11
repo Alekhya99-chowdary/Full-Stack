@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timer to delay execution</title>
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").delay(800).fadeIn();
+                $("#div2").delay(2400).fadeIn();
+                $("#div3").delay(4000).fadeIn();
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        <h3>Click to fadeIn boxes with a delay</h3>
+        <button type="button" class="btn btn-primary">Click</button><br/>
+        <div id="div1" style="width:100px;height:90px;display:none;background-color:#9F81F7;"></div><br>
+        <div id="div2" style="width:100px;height:90px;display:none;background-color:#0B610B;"></div><br>
+        <div id="div3" style="width:100px;height:90px;display:none;background-color:#61210B;"></div><br>
+    </div>
+    </body>
+</html>
