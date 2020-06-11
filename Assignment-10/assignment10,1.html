@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jquery Validation</title>
+    <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+    <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <link rel="StyleSheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnLogin").click(function () {
+                var val1 = $("#txtUsername").val();
+                var val2 = $("#txtPassword").val();
+                var val3 = "/^[A-Za-z]{5,13}$/";
+                if (val1 == '' && val2 == '') {
+                    $('input[type="text"]').css("border", "2px solid red");
+                    $('input[type="password"]').css("border", "2px solid red");
+                    window.alert('fill the username and password');
+                }
+                else {
+                    if (/^[A-Za-z]{6,12}$/.test(val1) && /^[A-Za-z]{6,12}$/.test(val2))
+                    {
+                        $('input[type="text"]').css("border", "2px solid red");
+                        window.alert('Validated');
+                    }
+                    else{
+                        window.alert("Not Validated")
+                    }
+                }
+            });
+        });
+    </script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/action_page.php" method="POST">
+            <h1>Login</h1>
+                <div class="col input-group form-group">
+                <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-user-circle">Username</i></span>
+                </div>
+                <input type="text" class="form-control" id="txtUsername" placeholder="Enter Username" />
+            </div>
+            <div class="col input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-key">Password</i></span>
+            </div>
+                <input type="password" class="form-control" id="txtPassword" placeholder="Enter Password" />
+            </div>
+            <button type="button" class="btn btn-primary" id="btnLogin">Login</button>
+            <button type="button" class="btn btn-danger">Cancel</button><br/>
+                <label><input type="checkbox" name="remember">Remember me</label><br/>
+                <span class="psw">Forgot <a href="#">password?</a></span>           
+        </form>
+    </div>
+</body>
+</html>
